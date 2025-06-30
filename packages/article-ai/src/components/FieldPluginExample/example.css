@@ -1,0 +1,217 @@
+/*Layout Styles*/
+.container {
+  max-width: 22rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid var(--light);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+hr {
+  border-top: 1px dashed var(--light);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin: 1.25rem 0;
+}
+
+.counter-value {
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 1.625rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.8125rem 1rem;
+  background: transparent;
+  border: 1px solid var(--light);
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--light_75);
+}
+
+.btn-close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.btn-close:hover {
+  background-color: var(--light_75);
+}
+
+.asset-selector img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.address-lookup {
+  max-width: 100%;
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.input-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151; /* Tailwind slate-700 */
+  font-family: Roboto, sans-serif;
+}
+
+.address-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 12px;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.address-input:hover:not(:focus) {
+  border: 1px solid #00b3b0;
+}
+
+.address-input:focus {
+  outline: 2px solid #00b3b0;
+  outline-offset: 1px;
+}
+
+.address-textarea {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 12px;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.5;
+}
+
+.address-textarea:hover:not(:focus) {
+  border: 1px solid #00b3b0;
+}
+
+.address-textarea:focus {
+  outline: 2px solid #00b3b0;
+  outline-offset: 1px;
+}
+
+.address-button {
+  flex-shrink: 0;
+  white-space: nowrap;
+  background-color: var(--sb-color-bg-teal, #00b3b0);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.address-button:disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.address-button:hover:not(:disabled) {
+  background-color: #057f7f;
+}
+
+.saved-address-label {
+  margin: 4px 2px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(27, 36, 63);
+}
+
+.map-info-block {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.map-view {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.saved-address-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.saved-address-name {
+  margin: 0;
+  font-size: 1rem;
+  color: #1b243f;
+}
+
+.map-preview {
+  width: 100%;
+  height: 300px;
+  border: none;
+  display: block;
+}
